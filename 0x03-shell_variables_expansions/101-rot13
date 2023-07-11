@@ -1,0 +1,10 @@
+#!/bin/bash
+
+text="$1"
+
+encoded=$(echo "$text" | tr 'A-Za-z' 'N-ZA-Mn-za-m')
+decoded=$(echo "$text" | tr 'N-ZA-Mn-za-m' 'A-Za-z')
+
+echo "Encoded: $encoded"
+echo "Decoded: $decoded"
+
